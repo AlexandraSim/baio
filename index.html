@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+		integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+	<title>Baio</title>
+</head>
+
+<body>
+	<button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
+	<div id="loader-wrapper">
+		<div id="loader">
+			<h1>Welkome to Baioretto</h1>
+			<picture><source srcset="../img/nyan_cat.gif" type="image/webp"><img src="../img/nyan_cat.gif" alt=""></picture>
+		</div>
+	</div>
+	<header class="header">
+	<div class="nav-bar">
+		<div class="top-nav container flex">
+			<!-- contacts -->
+			<div class="top-nav-contact flex">
+				<p class="tel"><a href="tel:+36301789982">+36301789982</a></p>
+				<picture><source srcset="img/ellipse.svg" type="image/webp"><img class="top-nav-ellipse" src="img/ellipse.svg" alt="ellipse"></picture>
+				<p class="mail"><a href="mailto:sashamailrias@gmail.com">sashamailrias@gmail.com</a></p>
+			</div>
+			<!-- account -->
+			<div class="top-nav-account flex">
+				<a href="account-page.html">Account</a>
+				<picture><source srcset="img/ellipse.svg" type="image/webp"><img class="top-nav-ellipse" src="img/ellipse.svg" alt="ellipse"></picture>
+				<!--<a id="show-login" onclick="openLoginForm()" href="#">Log in</a>-->
+				<a id="show-login" href="#">Log in</a>
+			</div>
+		</div>
+		<!-- popup -->
+		<div class="popup-login-overlay">
+			<div class="popup-login">
+				<span class="close-login-btn" onclick="closeLoginForm()">×</span>
+				<div class="login-form" autocomplete="off">
+					<h2>Log In</h2>
+					<div class="login-form-element">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="Enter email">
+					</div>
+					<div class="login-form-element">
+						<label for="password">Password</label>
+						<input type="password" id="pwd" name="pwd" placeholder="Enter password">
+					</div>
+					<div class="login-form-element">
+						<input type="checkbox" id="remember-me" placeholder="Enter password">
+						<label for="remember-me">Remember me</label>
+					</div>
+					<div class="login-form-element">
+						<input type="submit" value="Login"></input>
+					</div>
+					<div class="login-form-element">
+						<a href="#">Forgot password ?</a>
+						<a href="#">Signup</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+		<div class="nav-wrap-bg">
+			<div class="nav container flex">
+				<a href="index.html"><picture><source srcset="img/logo.svg" type="image/webp"><img class="logo" src="img/logo.svg" alt="logo"></picture></a>
+				<a href="index.html">
+					<div class="logo-s">
+						<picture><source srcset="img/logo-s.svg" type="image/webp"><img src="img/logo-s.svg" alt="logo"></picture>
+					</div>
+				</a>
+				<!-- navigation -->
+				<ul class="nav-links flex" id="nav-links">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="about-page.html" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="services-page.html" class="nav-link">Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="shop-page.html" class="nav-link">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a href="news-page.html" class="nav-link">News</a>
+					</li>
+				</ul>
+				<div class="nav-nav-search-bag-hamburger flex">
+					<div class="nav-search-bag flex">
+						<div class="nav-bag flex">
+							<picture><source srcset="img/bag.svg" type="image/webp"><img src="img/bag.svg" alt="bag" href="#"></picture>
+							<p class="cart">
+								<a href="cart-page.html" name="basket">
+									C <span>0</span>
+								</a>
+							</p>
+						</div>
+
+						<!-- open search -->
+						<div id="search" class="overlay">
+							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
+							<div class="overlay-content">
+								<form action="/action_page.php">
+									<input type="text" placeholder="Type here baka..." name="search">
+									<button type="submit">Search</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="nav-search open-search flex" onclick="openSearch()">
+							<picture><source srcset="img/search.svg" type="image/webp"><img src="img/search.svg" alt="search"></picture>
+							<p>Search</p>
+						</div>
+					</div>
+
+					<!-- hamburger on mobile version -->
+					<div class="nav-hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	<div class="wrap">
+		<section class="main">
+			<div class="section__1">
+				<div class="sec__1-wrap-bg">
+					<div class="sec__1-content container flex">
+						<picture><source srcset="img/sec-1-gif.gif" type="image/webp"><img src="img/sec-1-gif.gif" alt="Plants"></picture>
+						<div class="sec__1-text">
+							<h1><span>Bai.</span> Number #1 Trusted Plants Website </h1>
+							<p>It is a long established fact that a reader will be distracted by the readable content of
+								a page when looking at its layout.</p>
+							<a href="about-page.html">view now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section__2">
+				<div class="sec__2-wrap container flex">
+					<h2>Our Products</h2>
+					<div class="sec__2-filter">
+						<div class="sec__2-filter-container flex" id="sec__2-filter-container">
+							<button class="sec__2-filter-btn" data-value="[flowers]">Flowers</button>
+							<button class="sec__2-filter-btn" data-value="[mushrooms]">Mushrooms</button>
+							<button class="sec__2-filter-btn" data-value="[fertilizer]">Fertilizer</button>
+							<button class="sec__2-filter-btn" data-value="[plants]">Plants</button>
+							<button class="sec__2-filter-btn sec__2-filter-btn-active" data-value="[all]">all</button>
+						</div>
+						<div class="products sec__2-filter-container-items">
+							<div class="sec__2-filter-item flex" data-category="[flowers],[plants]">
+								<picture><source srcset="img/scilla.gif" type="image/webp"><img class="sec__2-filter-item-img" src="img/scilla.gif" alt="scilla"></picture>
+								<div class="item-name-price flex">
+									<p class="item-name-preview item-name"><a href="single-product.html">Scilla</a></p>
+									<p class="item-price">30$-1</p>
+								</div>
+								<div class="item-btn flex">
+									<a href="cart-page.html">Add to Cart</a>
+									<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+								</div>
+							</div>
+							<div class="sec__2-filter-item flex" data-category="[mushrooms]">
+								<picture><source srcset="img/amanita.gif" type="image/webp"><img class="sec__2-filter-item-img" src="img/amanita.gif" alt="amanita"></picture>
+								<div class="item-name-price flex">
+									<p class="item-name-preview item-name"><a href="single-product.html">Amanita</a></p>
+									<p class="item-price">10$-5</p>
+								</div>
+								<div class="item-btn flex">
+									<a href="cart-page.html">Add to Cart</a>
+									<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+								</div>
+							</div>
+							<div class="sec__2-filter-item flex" data-category="[flowers],[plants]">
+								<picture><source srcset="img/rose.gif" type="image/webp"><img class="sec__2-filter-item-img" src="img/rose.gif" alt="rose"></picture>
+								<div class="item-name-price flex">
+									<p class="item-name-preview item-name"><a href="single-product.html">Rose</a></p>
+									<p class="item-price">50$-1</p>
+								</div>
+								<div class="item-btn flex">
+									<a href="cart-page.html">Add to Cart</a>
+									<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+								</div>
+							</div>
+
+							<div class="sec__2-filter-item flex" data-category="[flowers]">
+								<picture><source srcset="img/veronicaPersica.gif" type="image/webp"><img class="sec__2-filter-item-img" src="img/veronicaPersica.gif" alt="veronicaPersica"></picture>
+								<div class="item-name-price flex">
+									<p class="item-name-preview item-name"><a href="single-product.html">Veronica
+											Persica</a></p>
+									<p class="item-price">30$-1</p>
+								</div>
+								<div class="item-btn flex">
+									<a href="cart-page.html">Add to Cart</a>
+									<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+								</div>
+							</div>
+
+							<div class="sec__2-filter-item flex" data-category="[fertilizer],[plants],[mushrooms]">
+								<picture><source srcset="img/aloe.gif" type="image/webp"><img class="sec__2-filter-item-img" src="img/aloe.gif" alt="aloe"></picture>
+								<div class="item-name-price flex">
+									<p class="item-name-preview item-name"><a href="single-product.html">Aloe</a></p>
+									<p class="item-price">30$-1</p>
+								</div>
+								<div class="item-btn flex">
+									<a href="cart-page.html">Add to Cart</a>
+									<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+								</div>
+							</div>
+
+							<div class="sec__2-filter-item flex" data-category="[fertilizer],[plants]">
+								<picture><source srcset="img/aquarium.gif" type="image/webp"><img class="sec__2-filter-item-img" src="img/aquarium.gif" alt="aquarium"></picture>
+								<div class="item-name-price flex">
+									<p class="item-name-preview item-name"><a href="single-product.html">Aquarium</a>
+									</p>
+									<p class="item-price">30$-1</p>
+								</div>
+								<div class="item-btn flex">
+									<a href="#" class="add-cart cart3">Add to Cart</a>
+									<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+								</div>
+							</div>
+						</div>
+						<a class="sec__2-btn-more" href="shop-page.html">More</a>
+					</div>
+				</div>
+			</div>
+			<div class="section__3">
+				<div class="sec__3-wrap container flex">
+					<div class="sec__3-text">
+						<h2>Terrariums<span>Time for something new</span></h2>
+						<p>We've been playing in the mud behind the scenes with our terrariums! If you haven't seen one
+							before, they are mini gardens inside glass. They are a little bit addictive and bring hours
+							of entertainment.</p>
+						<div class="sec__3-btn flex">
+							<a href="shop-page.html">View more</a>
+							<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+						</div>
+					</div>
+					<picture><source srcset="img/aquarium.gif" type="image/webp"><img class="sec__3-img" src="img/aquarium.gif" alt="aquarium"></picture>
+				</div>
+			</div>
+			<div class="section__4">
+				<div class="sec__4-wrap container flex">
+					<div class="sec__4-text">
+						<h2>New <span>Arrival</span></h2>
+						<p>We've been playing in the mud behind the scenes with our terrariums! If you haven't seen one
+							before.</p>
+						<div class="sec__4-btn flex">
+							<a href="shop-page.html">View more</a>
+							<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+						</div>
+					</div>
+					<div class="products sec__4-items flex">
+						<div class="item sec__4-item flex">
+							<picture><source srcset="img/veronicaPersica.gif" type="image/webp"><img class="sec__4-item-img" src="img/veronicaPersica.gif" alt="veronica persica"></picture>
+							<div class="item-name-price flex">
+								<p class="item-name-preview item-name"><a href="single-product.html">Veronica
+										Persica</a></p>
+								<p class="item-price">30$-1</p>
+							</div>
+							<div class="item-btn flex">
+								<a href="#" class="add-cart cart1">Add to Cart</a>
+								<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+							</div>
+						</div>
+						<div class="item sec__4-item flex">
+							<picture><source srcset="img/scilla.gif" type="image/webp"><img class="sec__4-item-img" src="img/scilla.gif" alt="scilla"></picture>
+							<div class="item-name-price flex">
+								<p class="item-name-preview item-name"><a href="single-product.html">Scilla</a></p>
+								<p class="item-price">30$-1</p>
+							</div>
+							<div class="item-btn flex">
+								<a href="#" class="add-cart cart2">Add to Cart</a>
+								<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section__5">
+				<div class="sec__5-wrap container flex">
+					<h2>Bestsellers</h2>
+					<div class="products sec__5-items flex">
+						<div class="sec__5-item flex">
+							<picture><source srcset="img/aquarium.gif" type="image/webp"><img class="sec__5-item-img" src="img/aquarium.gif" alt="veronica persica"></picture>
+							<div class="item-name-price flex">
+								<p class="item-name-preview item-name"><a href="single-product.html">Veronica
+										Persicadjnk</a></p>
+								<p class="item-price">30$-1</p>
+							</div>
+							<div class="item-btn flex">
+								<a href="cart-page.html">Add to Cart</a>
+								<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+							</div>
+						</div>
+						<div class="sec__5-item flex">
+							<picture><source srcset="img/aloe.gif" type="image/webp"><img class="sec__5-item-img" src="img/aloe.gif" alt="scilla"></picture>
+							<div class="item-name-price flex">
+								<p class="item-name-preview item-name"><a href="single-product.html">Scilla</a></p>
+								<p class="item-price">30$-1</p>
+							</div>
+							<div class="item-btn flex">
+								<a href="cart-page.html">Add to Cart</a>
+								<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+							</div>
+						</div>
+						<div class="sec__5-item flex">
+							<picture><source srcset="img/amanita.gif" type="image/webp"><img class="sec__5-item-img" src="img/amanita.gif" alt="veronica persica"></picture>
+							<div class="item-name-price flex">
+								<p class="item-name-preview item-name"><a href="single-product.html">Veronica
+										Persica</a></p>
+								<p class="item-price">30$-1</p>
+							</div>
+							<div class="item-btn flex">
+								<a href="#">Add to Cart</a>
+								<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+							</div>
+						</div>
+						<div class="sec__5-item flex">
+							<picture><source srcset="img/scilla.gif" type="image/webp"><img class="sec__5-item-img" src="img/scilla.gif" alt="scilla"></picture>
+							<div class="item-name-price flex">
+								<p class="item-name-preview item-name"><a href="single-product.html">Scilla</a></p>
+								<p class="item-price">30$-1</p>
+							</div>
+							<div class="item-btn flex">
+								<a href="cart-page.html">Add to Cart</a>
+								<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+							</div>
+						</div>
+						<div class="sec__5-item flex">
+							<picture><source srcset="img/veronicaPersica.gif" type="image/webp"><img class="sec__5-item-img" src="img/veronicaPersica.gif" alt="veronica persica"></picture>
+							<div class="item-name-price flex">
+								<p class="item-name-preview item-name"><a href="single-product.html">Veronica
+										Persica</a></p>
+								<p class="item-price">30$-1</p>
+							</div>
+							<div class="item-btn flex">
+								<a href="cart-page.html">Add to Cart</a>
+								<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+							</div>
+						</div>
+						<div class="sec__5-item flex">
+							<picture><source srcset="img/rose.gif" type="image/webp"><img class="sec__5-item-img" src="img/rose.gif" alt="scilla"></picture>
+							<div class="item-name-price flex">
+								<p class="item-name-preview item-name"><a href="single-product.html">Scilla</a></p>
+								<p class="item-price">30$-1</p>
+							</div>
+							<div class="item-btn flex">
+								<a href="cart-page.html">Add to Cart</a>
+								<picture><source srcset="img/line.svg" type="image/webp"><img src="img/line.svg" alt="arrow"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section__6">
+				<div class="sec__6-wrap container flex">
+					<a href="news-page.html">
+						<h2>Our news</h2>
+					</a>
+					<div class="sec__6-all-news flex">
+						<div class="sec__6-news news">
+							<picture><source srcset="img/meadow.gif" type="image/webp"><img src="img/meadow.gif" alt="meadow"></picture>
+							<h4>First <span>news</span></h4>
+							<time class="news__date" datetime="2023-02-01">February 01, 2023</time>
+							<p>It is a long established fact that a reader will be distracted by the readable content.It
+								is a long established fact that a reader will be distracted by the readable content.</p>
+							<a href="single-news-page.html">view more</a>
+						</div>
+						<div class="sec__6-news news">
+							<picture><source srcset="img/tinctures.gif" type="image/webp"><img src="img/tinctures.gif" alt="meadow"></picture>
+							<h4>Second <span>news</span></h4>
+							<time class="news__date" datetime="2023-03-20">March 20, 2023</time>
+							<p>It is a long established fact that a reader will be distracted by the readable content.It
+								is a long established fact that a reader will be distracted by the readable content.</p>
+							<a href="single-news-page.html">view more</a>
+						</div>
+						<div class="sec__6-news news">
+							<picture><source srcset="img/window.gif" type="image/webp"><img src="img/window.gif" alt="meadow"></picture>
+							<h4>Third <span>news</span></h4>
+							<time class="news__date" datetime="2023-04-05">April 05, 2023</time>
+							<p>It is a long established fact that a reader will be distracted by the readable content.It
+								is a long established fact that a reader will be distracted by the readable content.</p>
+							<a href="single-news-page.html">view more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+	<div class="top-footer">
+		<h2>All you may need</h2>
+		<div class="top-footer-img-wrap container">
+			<picture><source srcset="img/cat.gif" type="image/webp"><img class="top-footer-img" src="img/cat.gif" alt="cat"></picture>
+		</div>
+		<div class="top-footer-wrap-bg">
+			<div class="top-footer-content container flex">
+				<div class="top-footer-text flex">
+					<a href="index.html"><picture><source srcset="img/logo.svg" type="image/webp"><img src="img/logo.svg" alt="logo"></picture></a>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+						of type
+						and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="top-footer-links flex">
+					<h3>Useful links</h3>
+					<div class="top-footer-links-a flex">
+						<a href="index.html">Home</a>
+						<a href="about-page.html">About Us</a>
+						<a href="services-page.html">Services</a>
+						<a href="shop-page.html">All products</a>
+						<a href="news-page.html">Our news</a>
+						<a href="not-found-page.html">Privacy Policy</a>
+					</div>
+				</div>
+				<div class="top-footer-contacts">
+					<h3>Contact us</h3>
+					<div>
+						<p><a href="tel:+36301789982">+36301789982</a></p>
+						<p><a href="mailto:sashamailrias@gmail.com">sashamailrias@gmail.com</a></p>
+						<p>Hungary, Budapest - 9600</p>
+					</div>
+					<a class="top-footer-contacts-btn" href="contact-page.html">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer container flex">
+		<p>Design made by Sasha :)</p>
+	</div>
+</footer>
+	<script src="js/script.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
