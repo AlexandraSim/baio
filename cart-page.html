@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Shoping Cart</title>
+</head>
+
+<body>
+	<button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
+	<header class="header">
+	<div class="nav-bar">
+		<div class="top-nav container flex">
+			<!-- contacts -->
+			<div class="top-nav-contact flex">
+				<p class="tel"><a href="tel:+36301789982">+36301789982</a></p>
+				<picture><source srcset="img/ellipse.svg" type="image/webp"><img class="top-nav-ellipse" src="img/ellipse.svg" alt="ellipse"></picture>
+				<p class="mail"><a href="mailto:sashamailrias@gmail.com">sashamailrias@gmail.com</a></p>
+			</div>
+			<!-- account -->
+			<div class="top-nav-account flex">
+				<a href="account-page.html">Account</a>
+				<picture><source srcset="img/ellipse.svg" type="image/webp"><img class="top-nav-ellipse" src="img/ellipse.svg" alt="ellipse"></picture>
+				<!--<a id="show-login" onclick="openLoginForm()" href="#">Log in</a>-->
+				<a id="show-login" href="#">Log in</a>
+			</div>
+		</div>
+		<!-- popup -->
+		<div class="popup-login-overlay">
+			<div class="popup-login">
+				<span class="close-login-btn" onclick="closeLoginForm()">×</span>
+				<div class="login-form" autocomplete="off">
+					<h2>Log In</h2>
+					<div class="login-form-element">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="Enter email">
+					</div>
+					<div class="login-form-element">
+						<label for="password">Password</label>
+						<input type="password" id="pwd" name="pwd" placeholder="Enter password">
+					</div>
+					<div class="login-form-element">
+						<input type="checkbox" id="remember-me" placeholder="Enter password">
+						<label for="remember-me">Remember me</label>
+					</div>
+					<div class="login-form-element">
+						<input type="submit" value="Login"></input>
+					</div>
+					<div class="login-form-element">
+						<a href="#">Forgot password ?</a>
+						<a href="#">Signup</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+		<div class="nav-wrap-bg">
+			<div class="nav container flex">
+				<a href="index.html"><picture><source srcset="img/logo.svg" type="image/webp"><img class="logo" src="img/logo.svg" alt="logo"></picture></a>
+				<a href="index.html">
+					<div class="logo-s">
+						<picture><source srcset="img/logo-s.svg" type="image/webp"><img src="img/logo-s.svg" alt="logo"></picture>
+					</div>
+				</a>
+				<!-- navigation -->
+				<ul class="nav-links flex" id="nav-links">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="about-page.html" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="services-page.html" class="nav-link">Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="shop-page.html" class="nav-link">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a href="news-page.html" class="nav-link">News</a>
+					</li>
+				</ul>
+				<div class="nav-nav-search-bag-hamburger flex">
+					<div class="nav-search-bag flex">
+						<div class="nav-bag flex">
+							<picture><source srcset="img/bag.svg" type="image/webp"><img src="img/bag.svg" alt="bag" href="#"></picture>
+							<p class="cart">
+								<a href="cart-page.html" name="basket">
+									C <span>0</span>
+								</a>
+							</p>
+						</div>
+
+						<!-- open search -->
+						<div id="search" class="overlay">
+							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
+							<div class="overlay-content">
+								<form action="/action_page.php">
+									<input type="text" placeholder="Type here baka..." name="search">
+									<button type="submit">Search</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="nav-search open-search flex" onclick="openSearch()">
+							<picture><source srcset="img/search.svg" type="image/webp"><img src="img/search.svg" alt="search"></picture>
+							<p>Search</p>
+						</div>
+					</div>
+
+					<!-- hamburger on mobile version -->
+					<div class="nav-hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	<div class="wrap">
+		<section class="main">
+			<div class="container">
+				<ul class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li>Cart</li>
+				</ul>
+			</div>
+
+			<div class="cart-section__1 container">
+				<div class="heading-total">
+					<h2>Shoping Cart</h2>
+					<div class="total-items-cart">
+						<span>0</span>
+						Items in your Bag
+					</div>
+				</div>
+				<div class="cart-sec__1-basket">
+					<!--items-->
+					<div class="cart-sec__1-basket-products cart-sec__1-product-container">
+						<div class="items"></div>
+						<aside>
+						</aside>
+					</div>
+				</div>
+			</div>
+			</aside>
+		</section>
+	</div>
+	<footer>
+	<div class="top-footer">
+		<h2>All you may need</h2>
+		<div class="top-footer-img-wrap container">
+			<picture><source srcset="img/cat.gif" type="image/webp"><img class="top-footer-img" src="img/cat.gif" alt="cat"></picture>
+		</div>
+		<div class="top-footer-wrap-bg">
+			<div class="top-footer-content container flex">
+				<div class="top-footer-text flex">
+					<a href="index.html"><picture><source srcset="img/logo.svg" type="image/webp"><img src="img/logo.svg" alt="logo"></picture></a>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+						of type
+						and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="top-footer-links flex">
+					<h3>Useful links</h3>
+					<div class="top-footer-links-a flex">
+						<a href="index.html">Home</a>
+						<a href="about-page.html">About Us</a>
+						<a href="services-page.html">Services</a>
+						<a href="shop-page.html">All products</a>
+						<a href="news-page.html">Our news</a>
+						<a href="not-found-page.html">Privacy Policy</a>
+					</div>
+				</div>
+				<div class="top-footer-contacts">
+					<h3>Contact us</h3>
+					<div>
+						<p><a href="tel:+36301789982">+36301789982</a></p>
+						<p><a href="mailto:sashamailrias@gmail.com">sashamailrias@gmail.com</a></p>
+						<p>Hungary, Budapest - 9600</p>
+					</div>
+					<a class="top-footer-contacts-btn" href="contact-page.html">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer container flex">
+		<p>Design made by Sasha :)</p>
+	</div>
+</footer>
+	<script src="js/script.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
