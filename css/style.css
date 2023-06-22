@@ -107,6 +107,7 @@ a {
 
 button {
   font-family: "Montserrat", sans-serif;
+  -webkit-appearance: none;
 }
 
 .nav-bar {
@@ -1159,9 +1160,9 @@ button {
 }
 
 .section__3 .sec__3-wrap .sec__3-text {
-  margin: 80px 40px;
+  margin: 80px 30px;
   max-width: 840px;
-  width: 45%;
+  width: 43%;
 }
 
 .section__3 .sec__3-wrap .sec__3-text h2 {
@@ -1333,7 +1334,6 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 110px;
-  margin-bottom: 20px;
 }
 
 .section__6 .sec__6-wrap a {
@@ -1434,6 +1434,10 @@ button {
   color: #fff;
   border: 1px solid #00D870;
   background: #00D870;
+}
+
+.section__6 .sec__6-wrap .sec__6-all-news .sec__6-news a {
+  margin-bottom: 0;
 }
 
 .hide {
@@ -2549,6 +2553,7 @@ button {
   padding: 30px;
   color: #fff;
   background: #00D870;
+  line-height: 160%;
 }
 
 .single-news blockquote span {
@@ -4571,11 +4576,10 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .section__6 .sec__6-wrap .sec__6-all-news .sec__6-news:last-child {
-    margin-right: auto;
-    margin-left: 125px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    row-gap: 60px;
   }
 
   .news .news-sec-2__all-news {
@@ -4790,11 +4794,6 @@ button {
     width: 100%;
   }
 
-  .section__6 .sec__6-wrap .sec__6-all-news .sec__6-news:last-child {
-    margin-right: auto;
-    margin-left: 30px;
-  }
-
   .cart-section__1 {
     margin-bottom: 50px;
   }
@@ -4857,8 +4856,12 @@ button {
   }
 
   .shop .shop-wrap .sidebar-mobile {
-    display: block;
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .shop .shop-wrap .sidebar-mobile.active {
@@ -5077,6 +5080,10 @@ button {
     width: 100%;
   }
 
+  .section__2 .sec__2-wrap {
+    margin-bottom: 100px;
+  }
+
   .section__2 .sec__2-wrap h2 {
     margin: 0 0 55px 0;
   }
@@ -5105,10 +5112,6 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .section__6 .sec__6-wrap .sec__6-all-news .sec__6-news:last-child {
-    margin: 0 20px;
   }
 
   .cart-section__1 .cart-sec__1-basket .cart-sec__1-product-container .item {
@@ -5387,6 +5390,6 @@ button {
 
   .container {
     width: 100%;
-    padding: 0 40px;
+    padding: 0 30px;
   }
 }
