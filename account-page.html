@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="top-btn" title="Go to top" style="-webkit-appearance: none;">Top</button>
 	<header class="header">
 	<div class="nav-bar">
 		<div class="top-nav container flex">
@@ -102,8 +102,9 @@
 							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
 							<div class="overlay-content">
 								<form action="/action_page.php">
-									<input type="text" placeholder="Type here baka..." name="search">
-									<button type="submit">Search</button>
+									<input type="text" placeholder="Type here baka..." name="search"
+										style="-webkit-appearance: none;">
+									<button type="submit" style="-webkit-appearance: none;">Search</button>
 								</form>
 							</div>
 						</div>
@@ -162,7 +163,7 @@
 								<div class="account__form-data-elements">
 									<div class="account__form-element">
 										<label for="year">Year <abbr class="required" title="required">*</abbr></label>
-										<select id="year" name="year">
+										<select id="year" name="year" style="-webkit-appearance: none;">
 											<option value=""></option>
 											<option value="1940">1940</option>
 											<option value="1941">1941</option>
@@ -252,7 +253,8 @@
 									</div>
 									<div class="account__form-element">
 										<label for="month">Month<abbr class="required" title="required">*</abbr></label>
-										<select class="form-select" id="month" name="month">
+										<select class="form-select" id="month" name="month"
+											style="-webkit-appearance: none;">
 											<option value=""></option>
 											<option value="01">January</option>
 											<option value="02">February</option>
@@ -270,7 +272,8 @@
 									</div>
 									<div class="account__form-element">
 										<label for="day">Day <abbr class="required" title="required">*</abbr></label>
-										<select class="form-select" id="day" name="day">
+										<select class="form-select" id="day" name="day"
+											style="-webkit-appearance: none;">
 											<option value=""></option>
 											<option value="01">01</option>
 											<option value="02">02</option>
