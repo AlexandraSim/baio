@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="top-btn" title="Go to top" style="-webkit-appearance: none;">Top</button>
 	<header class="header">
 	<div class="nav-bar">
 		<div class="top-nav container flex">
@@ -102,8 +102,9 @@
 							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
 							<div class="overlay-content">
 								<form action="/action_page.php">
-									<input type="text" placeholder="Type here baka..." name="search">
-									<button type="submit">Search</button>
+									<input type="text" placeholder="Type here baka..." name="search"
+										style="-webkit-appearance: none;">
+									<button type="submit" style="-webkit-appearance: none;">Search</button>
 								</form>
 							</div>
 						</div>
@@ -147,7 +148,7 @@
 				<div class="checkout-coupon-open" id="checkout-coupon">
 					<div class="checkout-coupon-open-inputs">
 						<input type="number" id="fname" name="coupon-number" placeholder="Coupon code">
-						<input type="submit" value="Apply code">
+						<input type="submit" value="Apply code" style="-webkit-appearance: none;">
 					</div>
 					<a class="checkout-close-coupon" onclick="closeCouponField()" href="#">x Do not show
 						coupon field x</a>
@@ -159,7 +160,7 @@
 						<!--country-->
 						<div class="checkout-form-element">
 							<label for="country">Country <abbr class="required" title="required">*</abbr></label>
-							<select id="country" name="country">
+							<select id="country" name="country" style="-webkit-appearance: none;">
 								<option class="select">Select country</option>
 								<option value="AF">Afghanistan</option>
 								<option value="AX">Aland Islands</option>
@@ -564,7 +565,8 @@
 							<span class="totals-payment-checkmark-span checkmark-span"></span>
 						</label>
 						<!--btn submite-->
-						<button class="totals-payment-submit" type="submit">Place Order</button>
+						<button class="totals-payment-submit" type="submit" style="-webkit-appearance: none;">Place
+							Order</button>
 					</aside>
 				</div>
 			</div>
@@ -616,5 +618,4 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
