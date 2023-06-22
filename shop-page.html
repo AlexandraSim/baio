@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="top-btn" title="Go to top" style="-webkit-appearance: none;">Top</button>
 	<header class="header">
 	<div class="nav-bar">
 		<div class="top-nav container flex">
@@ -102,8 +102,9 @@
 							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
 							<div class="overlay-content">
 								<form action="/action_page.php">
-									<input type="text" placeholder="Type here baka..." name="search">
-									<button type="submit">Search</button>
+									<input type="text" placeholder="Type here baka..." name="search"
+										style="-webkit-appearance: none;">
+									<button type="submit" style="-webkit-appearance: none;">Search</button>
 								</form>
 							</div>
 						</div>
@@ -226,7 +227,6 @@
 								</label>
 							</div>
 						</div>
-
 						<!--color-->
 						<div class="shop-sidebar-color">
 							<h4>color</h4>
@@ -265,19 +265,20 @@
 								</label>
 							</div>
 						</div>
-						<button onClick="window.location.reload()" class="shop-sidebar-close-filter">Look what we can
+						<button onClick="window.location.reload()" class="shop-sidebar-close-filter"
+							style="-webkit-appearance: none;">Look what we can
 							found <span style='font-size:14px;margin-left: 5px;'>&#129300;</span></button>
 					</aside>
 
 					<!-- filter (sidebar) on mobile version -->
 					<div class="sidebar-mobile" onclick="shopFilterFunction()">
 						<label for="filter-sidebar-mb">Filter</label>
-						<ion-icon id="filter-sidebar-mb" name="filter-outline"></ion-icon>
+						<ion-icon id="filter-sidebar-mb" name="filter-outline" style="margin-top: 3px;"></ion-icon>
 					</div>
 
 					<div class="shop-products">
 						<div class="shop-products-filter">
-							<select class="items-filter">
+							<select class="items-filter" style="-webkit-appearance: none;">
 								<option selected value="/">Default sorting</option>
 								<option value="/">Best Selling</option>
 								<option value="/">Alphabetically, A-Z</option>
@@ -419,5 +420,4 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
