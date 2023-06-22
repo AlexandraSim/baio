@@ -16,11 +16,11 @@
 </head>
 
 <body>
-	<button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="top-btn" title="Go to top" style="-webkit-appearance: none;">Top</button>
 	<div id="loader-wrapper">
 		<div id="loader">
 			<h1>Welkome to Baioretto</h1>
-			<picture><source srcset="img/nyan_cat.gif" type="image/webp"><img src="../img/nyan_cat.gif" alt=""></picture>
+			<picture><source srcset="../img/nyan_cat.gif" type="image/webp"><img src="../img/nyan_cat.gif" alt=""></picture>
 		</div>
 	</div>
 	<header class="header">
@@ -111,8 +111,9 @@
 							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
 							<div class="overlay-content">
 								<form action="/action_page.php">
-									<input type="text" placeholder="Type here baka..." name="search">
-									<button type="submit">Search</button>
+									<input type="text" placeholder="Type here baka..." name="search"
+										style="-webkit-appearance: none;">
+									<button type="submit" style="-webkit-appearance: none;">Search</button>
 								</form>
 							</div>
 						</div>
@@ -154,11 +155,16 @@
 					<h2>Our Products</h2>
 					<div class="sec__2-filter">
 						<div class="sec__2-filter-container flex" id="sec__2-filter-container">
-							<button class="sec__2-filter-btn" data-value="[flowers]">Flowers</button>
-							<button class="sec__2-filter-btn" data-value="[mushrooms]">Mushrooms</button>
-							<button class="sec__2-filter-btn" data-value="[fertilizer]">Fertilizer</button>
-							<button class="sec__2-filter-btn" data-value="[plants]">Plants</button>
-							<button class="sec__2-filter-btn sec__2-filter-btn-active" data-value="[all]">all</button>
+							<button class="sec__2-filter-btn" data-value="[flowers]"
+								style="-webkit-appearance: none;">Flowers</button>
+							<button class="sec__2-filter-btn" data-value="[mushrooms]"
+								style="-webkit-appearance: none;">Mushrooms</button>
+							<button class="sec__2-filter-btn" data-value="[fertilizer]"
+								style="-webkit-appearance: none;">Fertilizer</button>
+							<button class="sec__2-filter-btn" data-value="[plants]"
+								style="-webkit-appearance: none;">Plants</button>
+							<button class="sec__2-filter-btn sec__2-filter-btn-active" data-value="[all]"
+								style="-webkit-appearance: none;">all</button>
 						</div>
 						<div class="products sec__2-filter-container-items">
 							<div class="sec__2-filter-item flex" data-category="[flowers],[plants]">
@@ -447,5 +453,4 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
