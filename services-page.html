@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<button onclick="topFunction()" id="top-btn" title="Go to top">Top</button>
+	<button onclick="topFunction()" id="top-btn" title="Go to top" style="-webkit-appearance: none;">Top</button>
 	<header class="header">
 	<div class="nav-bar">
 		<div class="top-nav container flex">
@@ -102,8 +102,9 @@
 							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
 							<div class="overlay-content">
 								<form action="/action_page.php">
-									<input type="text" placeholder="Type here baka..." name="search">
-									<button type="submit">Search</button>
+									<input type="text" placeholder="Type here baka..." name="search"
+										style="-webkit-appearance: none;">
+									<button type="submit" style="-webkit-appearance: none;">Search</button>
 								</form>
 							</div>
 						</div>
@@ -140,7 +141,8 @@
 				<div class="services-wrap">
 					<!--buttons-->
 					<div class="service-card">
-						<button class="service-card-title hoverbtn" onclick="openService(event, 'design')">
+						<button class="service-card-title hoverbtn" onclick="openService(event, 'design')"
+							style="-webkit-appearance: none;">
 							<svg width="53" height="72" viewBox="0 0 53 72" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -157,7 +159,8 @@
 							Design and arrangement
 							<p>flower art</p>
 						</button>
-						<button class="service-card-title" onclick="openService(event, 'handling')">
+						<button class="service-card-title" onclick="openService(event, 'handling')"
+							style="-webkit-appearance: none;">
 							<svg width="59" height="72" viewBox="0 0 59 72" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -174,7 +177,8 @@
 							Care and Handling
 							<p>information</p>
 						</button>
-						<button class="service-card-title" onclick="openService(event, 't-care')">
+						<button class="service-card-title" onclick="openService(event, 't-care')"
+							style="-webkit-appearance: none;">
 							<svg width="71" height="72" viewBox="0 0 71 72" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -191,7 +195,8 @@
 							Temporary care
 							<p>flower hotel</p>
 						</button>
-						<button class="service-card-title" onclick="openService(event, 'visit')">
+						<button class="service-card-title" onclick="openService(event, 'visit')"
+							style="-webkit-appearance: none;">
 							<svg width="78" height="72" viewBox="0 0 78 72" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -208,7 +213,8 @@
 							Home visit
 							<p>caring for wild flowers in a larger volume</p>
 						</button>
-						<button class="service-card-title" onclick="openService(event, 'return')">
+						<button class="service-card-title" onclick="openService(event, 'return')"
+							style="-webkit-appearance: none;">
 							<svg width="57" height="72" viewBox="0 0 57 72" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -225,7 +231,8 @@
 							Return
 							<p>max 3 days</p>
 						</button>
-						<button class="service-card-title" onclick="openService(event, 'delivery')">
+						<button class="service-card-title" onclick="openService(event, 'delivery')"
+							style="-webkit-appearance: none;">
 							<svg width="72" height="72" viewBox="0 0 72 72" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path
@@ -561,5 +568,4 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
