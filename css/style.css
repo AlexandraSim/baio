@@ -1704,7 +1704,6 @@ button {
   min-width: 245px;
   background: #f6f6f6;
   border-radius: 11px;
-  margin-right: 100px;
 }
 
 .shop .shop-wrap .shop-sidebar .shop-sidebar-title-mob {
@@ -2198,7 +2197,6 @@ button {
 .shop .shop-wrap .sidebar-mobile {
   display: none;
   position: absolute;
-  width: 90%;
   text-align: center;
   cursor: pointer;
 }
@@ -3704,7 +3702,12 @@ button {
 }
 
 .single-product .single-product__product .single-product__info .single-product__quantity-btn .single-product__quantity {
-  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-right: 25px;
 }
 
 .single-product .single-product__product .single-product__info .single-product__quantity-btn .single-product__quantity input#count {
@@ -3746,6 +3749,11 @@ button {
 }
 
 .single-product .single-product__product .single-product__info .single-product__quantity-btn .item-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding-top: 3px;
 }
 
@@ -4818,6 +4826,9 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .shop .shop-wrap .shop-sidebar {
@@ -4862,6 +4873,9 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 
   .shop .shop-wrap .sidebar-mobile.active {
@@ -4894,7 +4908,6 @@ button {
     padding: 20px 0;
     margin-right: 0px;
     border: none;
-    border-right: solid 20px transparent;
     border-radius: 0%;
     font-size: 14px;
   }
@@ -5227,6 +5240,10 @@ button {
 
   .section__1 .sec__1-wrap-bg .sec__1-content .sec__1-text p {
     width: 100%;
+  }
+
+  .section__2 .sec__2-wrap .sec__2-filter .sec__2-filter-container {
+    gap: 30px;
   }
 
   .section__3 .sec__3-wrap .sec__3-text {
