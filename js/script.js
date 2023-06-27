@@ -46,13 +46,13 @@ function closeSearch() {
 	document.getElementById("search").style.display = "none";
 }
 
-/*//open login popup
+//open login popup
 function openLoginForm() {
 	document.body.classList.add("showLoginForm");
 }
 function closeLoginForm() {
 	document.body.classList.remove("showLoginForm");
-}*/
+}
 
 function openCity(evt, cityName) {
 	var i, tabcontent, tablinks;
@@ -226,7 +226,7 @@ function displayCart() {
 				</div>
 				<div class="summary-delivery">
 					<h4>Shipping</h4>
-					<select name="cart-sec__1-delivery" class="cart-sec__1-summary-delivery-selection">
+					<select name="cart-sec__1-delivery" class="cart-sec__1-summary-delivery-selection" style="-webkit-appearance: none;">
 						<option value="0" selected="selected">Select shipping</option>
 						<option value="first-class">Royal Mail 1st Class</option>
 						<option value="second-class">Royal Mail 2nd Class</option>
@@ -242,7 +242,7 @@ function displayCart() {
 					</div>
 				</div>
 				<div class="cart-sec__1-summary-checkout">
-				<a href="checkout.html"><button class="cart-sec__1-checkout-cta">Go to Secure Checkout</button></a>
+				<a href="checkout.html"><button class="cart-sec__1-checkout-cta" style="-webkit-appearance: none;">Go to Secure Checkout</button></a>
 				</div>
 			</div>
 		</aside>
