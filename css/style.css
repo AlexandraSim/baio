@@ -430,6 +430,7 @@ button {
   overflow: hidden;
   -webkit-animation: 1s show ease;
           animation: 1s show ease;
+  margin: 0 20px;
 }
 
 @keyframes show {
