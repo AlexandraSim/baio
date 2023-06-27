@@ -1560,54 +1560,6 @@ button {
   color: #d0d0d0;
 }
 
-.cart-section__1 .cart-sec__1-basket .cart-sec__1-product-container aside .summary {
-  /*promocode
-  .cart-sec__1-basket-module {
-  	margin-bottom: 40px;
-
-  	.cart-sec__1-promo-code {
-  		@include flex;
-
-  		.cart-sec__1-promo-code-field {
-  			height: 40px;
-  			width: 100%;
-  			padding: 5px 8px;
-  			background-color: $white-color;
-  			border: none;
-  		}
-
-  		.cart-sec__1-promo-code-cta {
-  			padding-right: 20px;
-  			border: none;
-  			background-color: $white-color;
-  			text-transform: uppercase;
-  			color: $text-color;
-  			font-weight: 500;
-  			transition: 0.5s ease;
-  			cursor: pointer;
-  		}
-
-  		.cart-sec__1-promo-code-cta:hover,
-  		.cart-sec__1-promo-code-cta:focus {
-  			color: $primary-color;
-  		}
-  	}
-
-  	.cart-sec__1-summary-promo {
-  		margin-top: 20px;
-  		text-transform: uppercase;
-
-  		.cart-sec__1-promo-title {
-  			margin-bottom: 10px;
-  		}
-
-  		.cart-sec__1-promo-value {
-  			color: $primary-color;
-  		}
-  	}
-  }*/
-}
-
 .cart-section__1 .cart-sec__1-basket .cart-sec__1-product-container aside .summary h2 {
   font-size: 20px;
   padding-top: 10px;
@@ -1639,6 +1591,7 @@ button {
   border: none;
   border-right: solid 8px #fff;
   color: #2A3843;
+  -webkit-appearance: none;
 }
 
 .cart-section__1 .cart-sec__1-basket .cart-sec__1-product-container aside .summary .cart-sec__1-summary-total {
