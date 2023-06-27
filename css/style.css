@@ -244,6 +244,8 @@ button {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 .nav-bar .nav-wrap-bg .nav .nav-nav-search-bag-hamburger .nav-search-bag .overlay .overlay-content form input::-webkit-input-placeholder {
@@ -401,7 +403,7 @@ button {
   width: 100%;
   display: none;
   position: fixed;
-  z-index: 4;
+  z-index: 10;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.88);
@@ -421,8 +423,6 @@ button {
 
 .popup-login-overlay .popup-login {
   position: relative;
-  top: 20%;
-  left: 40%;
   height: 460px;
   width: 380px;
   background: #14212A;
@@ -589,7 +589,15 @@ button {
 }
 
 .showLoginForm .popup-login-overlay {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top-footer {
