@@ -289,7 +289,7 @@ button {
 }
 
 .nav-bar .nav-wrap-bg .nav .nav-nav-search-bag-hamburger .nav-search-bag .overlay .overlay-content form input[type=text] {
-  padding: 17px 15px 15px 25px;
+  padding: 15px 15px 15px 25px;
   font-size: 14px;
   color: #fff;
   float: left;
@@ -311,6 +311,7 @@ button {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  -webkit-appearance: none;
 }
 
 .nav-bar .nav-wrap-bg .nav .nav-nav-search-bag-hamburger .nav-search-bag .overlay .overlay-content form button:hover {
@@ -3660,16 +3661,16 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: 20px 0;
+  gap: 25px;
 }
 
 .single-product .single-product__product .single-product__info .single-product__quantity-btn .single-product__quantity {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin-right: 25px;
 }
 
 .single-product .single-product__product .single-product__info .single-product__quantity-btn .single-product__quantity input#count {
@@ -5205,7 +5206,7 @@ button {
   }
 
   .section__2 .sec__2-wrap .sec__2-filter .sec__2-filter-container {
-    gap: 30px;
+    gap: 28px;
   }
 
   .section__3 .sec__3-wrap .sec__3-text {
@@ -5345,6 +5346,20 @@ button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 20px 50px;
+  }
+
+  .single-product .single-product__product .single-product__info .single-product__category-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .single-product .single-product__product .single-product__info .single-product__category-number p:first-child {
+    margin: 0 0 15px;
   }
 
   .about .about__team-img img {
