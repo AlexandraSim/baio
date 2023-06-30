@@ -100,7 +100,7 @@
 						<div id="search" class="overlay">
 							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
 							<div class="overlay-content">
-								<form action="/action_page.php">
+								<form action="/action_page.php" style="-webkit-appearance: none;">
 									<input type="text" placeholder="Type here baka..." name="search"
 										style="-webkit-appearance: none;">
 									<button type="submit" style="-webkit-appearance: none;">Search</button>
@@ -143,8 +143,8 @@
 							<h4>Do you need something specific?</h4>
 						</div>
 						<div class="shop-sidebar-search">
-							<form class="shop-sidebar-search-form">
-								<input type="text" placeholder="Search...">
+							<form class="shop-sidebar-search-form" style="-webkit-appearance: none;">
+								<input type="text" placeholder="Search..." style="-webkit-appearance: none;">
 								<ion-icon class="sidebar-search-icon" name="search-outline">
 								</ion-icon>
 							</form>
@@ -277,7 +277,7 @@
 
 					<div class="shop-products">
 						<div class="shop-products-filter">
-							<select class="items-filter" style="-webkit-appearance: none;">
+							<select class="items-filter" style="-webkit-appearance: none; margin-right: 0px;">
 								<option selected value="/">Default sorting</option>
 								<option value="/">Best Selling</option>
 								<option value="/">Alphabetically, A-Z</option>
@@ -419,4 +419,5 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
