@@ -38,23 +38,21 @@
 				<div class="login-form" autocomplete="off">
 					<h2>Log In</h2>
 					<div class="login-form-element">
-						<label for="email">Email</label>
-						<input type="email" id="email" name="email" placeholder="Enter email">
+						<label for="email">Email<abbr class="required" title="required">*</abbr></label>
+						<input type="email" id="email" name="email">
 					</div>
 					<div class="login-form-element">
-						<label for="password">Password</label>
-						<input type="password" id="pwd" name="pwd" placeholder="Enter password">
+						<label for="password">Password <abbr class="required" title="required">*</abbr></label>
+						<input type="text" id="password" name="password">
 					</div>
-					<div class="login-form-element">
-						<input type="checkbox" id="remember-me" placeholder="Enter password">
-						<label for="remember-me">Remember me</label>
-					</div>
-					<div class="login-form-element">
-						<input type="submit" value="Login"></input>
-					</div>
-					<div class="login-form-element">
-						<a href="#">Forgot password ?</a>
-						<a href="#">Signup</a>
+					<label class="login-form-element checkmark-label">Remember me
+						<input type="checkbox">
+						<span class="login-form-checkmark-span checkmark-span"></span>
+					</label>
+					<button class="login-submit" type="submit" style="-webkit-appearance: none;">Log In</button>
+					<div class="login-form-element-links">
+						<a href="contact-page.html">Forgot password ?</a>
+						<a href="index.html">Signup</a>
 					</div>
 				</div>
 			</div>
@@ -101,7 +99,7 @@
 						<div id="search" class="overlay">
 							<span class="close-search-btn" onclick="closeSearch()" title="Close Overlay">×</span>
 							<div class="overlay-content">
-								<form action="/action_page.php">
+								<form action="/action_page.php" style="-webkit-appearance: none;">
 									<input type="text" placeholder="Type here baka..." name="search"
 										style="-webkit-appearance: none;">
 									<button type="submit" style="-webkit-appearance: none;">Search</button>
@@ -246,4 +244,5 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
