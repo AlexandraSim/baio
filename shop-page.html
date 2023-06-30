@@ -37,23 +37,21 @@
 				<div class="login-form" autocomplete="off">
 					<h2>Log In</h2>
 					<div class="login-form-element">
-						<label for="email">Email</label>
-						<input type="email" id="email" name="email" placeholder="Enter email">
+						<label for="email">Email<abbr class="required" title="required">*</abbr></label>
+						<input type="email" id="email" name="email">
 					</div>
 					<div class="login-form-element">
-						<label for="password">Password</label>
-						<input type="password" id="pwd" name="pwd" placeholder="Enter password">
+						<label for="password">Password <abbr class="required" title="required">*</abbr></label>
+						<input type="text" id="password" name="password">
 					</div>
-					<div class="login-form-element">
-						<input type="checkbox" id="remember-me" placeholder="Enter password">
-						<label for="remember-me">Remember me</label>
-					</div>
-					<div class="login-form-element">
-						<input type="submit" value="Login"></input>
-					</div>
-					<div class="login-form-element">
-						<a href="#">Forgot password ?</a>
-						<a href="#">Signup</a>
+					<label class="login-form-element checkmark-label">Remember me
+						<input type="checkbox">
+						<span class="login-form-checkmark-span checkmark-span"></span>
+					</label>
+					<button class="login-submit" type="submit" style="-webkit-appearance: none;">Log In</button>
+					<div class="login-form-element-links">
+						<a href="contact-page.html">Forgot password ?</a>
+						<a href="index.html">Signup</a>
 					</div>
 				</div>
 			</div>
@@ -277,7 +275,7 @@
 
 					<div class="shop-products">
 						<div class="shop-products-filter">
-							<select class="items-filter" style="-webkit-appearance: none; margin-right: 0px;">
+							<select class="items-filter" style="-webkit-appearance: none;">
 								<option selected value="/">Default sorting</option>
 								<option value="/">Best Selling</option>
 								<option value="/">Alphabetically, A-Z</option>
