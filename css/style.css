@@ -241,6 +241,7 @@ button {
   border: none;
   border-bottom: 1px solid #fff;
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -465,6 +466,13 @@ button {
   z-index: 5;
   padding: 20px 40px;
   border-radius: 5px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a white background color */
+  /* When the checkbox is checked, add a gren background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
 }
 
 .popup-login-overlay .popup-login .login-form h2 {
@@ -474,27 +482,107 @@ button {
 }
 
 .popup-login-overlay .popup-login .login-form .login-form-element {
-  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 22px 0;
 }
 
-.popup-login-overlay .popup-login .login-form .login-form-element input[type=email],
-.popup-login-overlay .popup-login .login-form .login-form-element input[type=password] {
-  margin-top: 10px;
-  display: block;
-  width: 100%;
+.popup-login-overlay .popup-login .login-form .login-form-element label {
+  margin-bottom: 10px;
+}
+
+.popup-login-overlay .popup-login .login-form .login-form-element label abbr {
+  text-decoration: none;
+}
+
+.popup-login-overlay .popup-login .login-form .login-form-element input {
   padding: 10px;
-  outline: none;
-  color: #2A3843;
   background: transparent;
   border: 1px solid #00D870;
-  border-radius: 2px;
+  border-radius: 3px;
+  color: #2A3843;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-appearance: none;
 }
 
-.popup-login-overlay .popup-login .login-form .login-form-element input[type=checkbox] {
-  margin-right: 5px;
+.popup-login-overlay .popup-login .login-form .checkmark-label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.popup-login-overlay .popup-login .login-form .login-form-element input[type=submit] {
+.popup-login-overlay .popup-login .login-form .checkmark-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.popup-login-overlay .popup-login .login-form .checkmark-span {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  border: 1px solid #f6f6f6;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.popup-login-overlay .popup-login .login-form .checkmark-label:hover input ~ .checkmark-span {
+  background-color: #fff;
+}
+
+.popup-login-overlay .popup-login .login-form .checkmark-label input:checked ~ .checkmark-span {
+  background-color: #00D870;
+  border: 1px solid #00D870;
+}
+
+.popup-login-overlay .popup-login .login-form .checkmark-span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.popup-login-overlay .popup-login .login-form .checkmark-label input:checked ~ .checkmark-span:after {
+  display: block;
+}
+
+.popup-login-overlay .popup-login .login-form .checkmark-label .checkmark-span:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 6px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.popup-login-overlay .popup-login .login-form .login-form-checkmark-span {
+  border: 1px solid #00D870;
+  background: transparent;
+}
+
+.popup-login-overlay .popup-login .login-form .login-submit {
   padding: 9px 35px;
   text-align: center;
   color: #fff;
@@ -508,23 +596,38 @@ button {
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
   cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 22px;
 }
 
-.popup-login-overlay .popup-login .login-form .login-form-element input[type=submit]:hover {
+.popup-login-overlay .popup-login .login-form .login-submit:hover {
   color: #00D870;
   background: #fff;
 }
 
-.popup-login-overlay .popup-login .login-form a {
+.popup-login-overlay .popup-login .login-form .login-form-element-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.popup-login-overlay .popup-login .login-form .login-form-element-links a {
   color: #00D870;
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
-  margin-bottom: 20px;
 }
 
-.popup-login-overlay .popup-login .login-form a:hover {
+.popup-login-overlay .popup-login .login-form .login-form-element-links a:first-child {
+  margin-right: 15px;
+}
+
+.popup-login-overlay .popup-login .login-form .login-form-element-links a:hover {
   color: #2A3843;
 }
 
@@ -2196,7 +2299,6 @@ button {
   margin-right: 40px;
   background-color: #F9F9F9;
   border: none;
-  border-right: solid 8px transparent;
   border-radius: 18.5px;
   color: #2A3843;
   font-family: "Montserrat", sans-serif;
@@ -3675,6 +3777,8 @@ button {
 
 .single-product .single-product__product .single-product__info .single-product__quantity-btn .single-product__quantity input#count {
   width: 30px;
+  padding: 1px 2px;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #2A3843;
@@ -3685,6 +3789,8 @@ button {
 
 .single-product .single-product__product .single-product__info .single-product__quantity-btn .single-product__quantity #plus_button,
 .single-product .single-product__product .single-product__info .single-product__quantity-btn .single-product__quantity #minus_button {
+  padding: 1px 7px;
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   color: #00D870;
@@ -4867,7 +4973,8 @@ button {
   }
 
   .shop .shop-wrap .shop-products .shop-products-filter .items-filter {
-    width: 185px;
+    text-align: center;
+    width: 100%;
     padding: 20px 0;
     margin-right: 0px;
     border: none;
@@ -5270,7 +5377,6 @@ button {
 
   .single-product .single-product__wrap .single-product__tabs #product-reviews .product-form .product-submit {
     padding: 15px 55px;
-    font-size: 12px;
   }
 
   .about .about__description .about__description-links {
