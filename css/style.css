@@ -476,6 +476,7 @@ button {
 }
 
 .popup-login-overlay .popup-login .login-form h2 {
+  font-size: 24px;
   text-align: center;
   margin: 30px 0 20px;
   color: #00D870;
@@ -4973,7 +4974,12 @@ button {
   }
 
   .shop .shop-wrap .shop-products .shop-products-filter .items-filter {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     padding: 20px 0;
     margin-right: 0px;
