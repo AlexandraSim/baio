@@ -4988,6 +4988,7 @@ button {
     border: none;
     border-radius: 0%;
     font-size: 14px;
+    padding-left: 10px;
   }
 
   .shop .shop-wrap .shop-products .shop-products-items .shop-products-container-items {
