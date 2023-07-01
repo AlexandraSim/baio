@@ -2294,7 +2294,7 @@ button {
 
 .shop .shop-wrap .shop-products .shop-products-filter .items-filter {
   background-color: #F9F9F9;
-  text-align: center;
+  text-align: end;
   width: 200px;
   padding: 12px 15px;
   margin-right: 40px;
@@ -4968,6 +4968,7 @@ button {
   }
 
   .shop .shop-wrap .shop-products .shop-products-filter .items-filter {
+    text-align: end;
     width: 100%;
     padding: 20px 0;
     margin-right: 0px;
