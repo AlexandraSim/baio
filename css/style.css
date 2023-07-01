@@ -4963,23 +4963,11 @@ button {
   }
 
   .shop .shop-wrap .shop-products .shop-products-filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     background: #F9F9F9;
     margin-top: 50px;
   }
 
   .shop .shop-wrap .shop-products .shop-products-filter .items-filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 100%;
     padding: 20px 0;
     margin-right: 0px;
