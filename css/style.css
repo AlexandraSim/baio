@@ -4977,18 +4977,17 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: center;
   }
 
   .shop .shop-wrap .shop-products .shop-products-filter .items-filter {
-    text-align: center;
-    width: 135px;
+    width: 137px;
     padding: 20px 0;
     margin-right: 0px;
     border: none;
     border-radius: 0%;
     font-size: 14px;
     margin-left: 7px;
+    padding-left: 3px;
   }
 
   .shop .shop-wrap .shop-products .shop-products-items .shop-products-container-items {
