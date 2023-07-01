@@ -2293,8 +2293,14 @@ button {
 }
 
 .shop .shop-wrap .shop-products .shop-products-filter .items-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   background-color: #F9F9F9;
-  text-align: end;
   width: 200px;
   padding: 12px 15px;
   margin-right: 40px;
@@ -4965,11 +4971,18 @@ button {
   .shop .shop-wrap .shop-products .shop-products-filter {
     background: #F9F9F9;
     margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
   }
 
   .shop .shop-wrap .shop-products .shop-products-filter .items-filter {
-    text-align: end;
-    width: 100%;
+    text-align: center;
+    width: 130px;
     padding: 20px 0;
     margin-right: 0px;
     border: none;
